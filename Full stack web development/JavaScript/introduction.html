@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>   
+Using the console 
+Uses REPL (Read-Evaluate-Print-Loop)
+
+
+What is a Variable?
+A variable is simply the name of a storage location.
+
+a = 10 
+age = 23
+name = "shayna"
+
+typeof = operator is used to determine the type of a variable. 
+
+Data Types in JS 
+
+     1. Primitive Types 
+        a. String (a="Hello World")
+        b. Number (a=10, b=3.14, c=-35)
+        c. Boolean (a=true, b=false)
+        d. Null (a=null)
+        e. Undefined (a=undefined)
+        f. Symbol (ES6) (a=Symbol("id"))
+        g. BigInt (ES2020) (a=9007199254740991n)
+
+    2. Non-Primitive Types
+        a. Object
+        b. Array 
+        c. Function 
+        d. Date 
+        e. RegExp
+    
+Operations in JS
+     
+     a. Addition 
+            a+b
+     b. Subtraction
+            a-b
+     c. Multiplication
+            a*b
+     d. Division
+            a/b
+     e. Modulus/Modulo(remainder)
+            a%b
+     f. Exponentiation (power)
+            a**b
+     g. Increment
+            a++
+     h. Decrement
+            a--
+
+NaN in JS - Not a Number
+       NaN is a special value in JavaScript that represents a value that is not a valid number. It is the result of an invalid mathematical operation, such as dividing zero by zero or taking the square root of a negative number.
+        0/0 // NaN
+        NaN - 1 
+        NaN*1
+        NaN + NaN
+
+Operator Precendence in JS 
+       1. Parentheses ()
+       2. Exponentiation **
+       3. Multiplication *, Division /, Modulus %
+       4. Addition +, Subtraction -
+       5. Increment ++, Decrement --
+
+let keyword - Syntax of declaring variables. (New syntax of writing variable)
+     let age = 25;
+     let cgpa = 8.9;
+     
+const keyword - values of const variables cannot be changed once they are assigned. 
+     const pi = 3.14;
+     const gravity = 9.8;
+
+var keyword - old syntax of writing variable.
+     var name = "John";
+     var city = "New York";
+
+
+Assignment Operators in JS 
+     a = b (assigns the value of b to a)
+     a += b (adds b to a and assigns the result to a)
+     a -= b (subtracts b from a and assigns the result to a)
+     a *= b (multiplies a by b and assigns the result to a)
+     a /= b (divides a by b and assigns the result to a)
+     a %= b (calculates the modulus of a by b and assigns the result to a)
+     a **= b (raises a to the power of b and assigns the result to a)
+    
+Comparison Operators in JS
+        a == b (equal to)
+        a === b (strictly equal to)
+        a != b (not equal to)   
+        a !== b (strictly not equal to)
+        a > b (greater than)
+        a < b (less than)
+        a >= b (greater than or equal to)
+        a <= b (less than or equal to)
+
+Logical Operators in JS
+        a && b (logical AND) true if both a and b are true
+        a || b (logical OR)  true if either a or b is true
+        !a (logical NOT)  true if a is false, and false if a is true
+
+Unary Operators in JS
+        typeof a (returns the type of a)
+        -a (negation) 
+        +a (unary plus) 
+        ++a (pre-increment)
+        a++ (post-increment) 
+        --a (pre-decrement) 
+        a-- (post-decrement)
+
+What is a TypeScript?
+    Static Typed, where JS is dynamic typed
+    Designed by Microsoft
+
+String in JS 
+    String are text or sequence of characters
+     let name = "John Doe";
+     let greeting = 'Hello, World!';
+
+String Indices in JS 
+    String are zero-indexed, meaning the first character is at index 0.
+     let name = "John Doe";
+     console.log(name[0]); // Output: J
+     console.log(name[1]); // Output: o
+     console.log(name[2]); // Output: h
+     console.log(name[3]); // Output: n
+     console.log(name[4]); // Output: (space)
+     console.log(name[5]); // Output: D
+     console.log(name[6]); // Output: o
+     console.log(name[7]); // Output: e
+     
+     name.length // gives the length of the string
+     name.toUpperCase() // converts the string to uppercase
+     name.toLowerCase() // converts the string to lowercase
+
+Concatenation of Strings in JS 
+    let firstName = "John";
+    let lastName = "Doe";
+    let fullName = firstName + " " + lastName; // Output: John Doe
+
+console.log() - used to print output to the console
+    console.log("Hello, World!"); // Output: Hello, World!
+    console.log(name); // Output: John Doe
+
+JavaScript file link 
+    <script src="script.js"></script>
+
+Template Literals in JS 
+    let name = "John";
+    let age = 30;
+    let message = `My name is ${name} and I am ${age} years old.`; // Output: My name is John and I am 30 years old.
+
+    
+ Conditional Statements in JS 
+
+     if-else
+        if (condition) {
+            // code to be executed if condition is true
+        } else {
+            // code to be executed if condition is false
+        }
+
+    nested if-else
+        if (condition1) {
+            // code to be executed if condition1 is true
+        } else if (condition2) {
+            // code to be executed if condition2 is true
+        } else {
+            // code to be executed if both condition1 and condition2 are false
+        }
+
+    switch-case 
+        switch (expression) {
+            case value1:
+                // code to be executed if expression === value1
+                break;
+            case value2:
+                // code to be executed if expression === value2
+                break;
+            default:
+                // code to be executed if expression doesn't match any case
+        }
+ 
+Alert & Prompt
+
+     Alert displays an alert message on the page 
+        alert("This is an alert message!");
+
+         console.log("this is a simple log");
+         console.warn("this is a warning");
+         console.error("this is an error");
+
+    Prompt diplays a dialog box that asks user for some input 
+       prompt("Please enter your name:"); 
+        
+String Method 
+    Methods - action that can be performed on objects.
+        Format  -  stringNmae.method()
+    
+        str.trim() - removes whitespace from both ends of a string
+        str.toUpperCase() - converts a string to uppercase letters
+        str.toLowerCase() - converts a string to lowercase letters
+        str.slice(start, end) - extracts a section of a string and returns it as a new string
+        str.substring(start, end) - similar to slice but doesn't accept negative indices
+        str.replace(searchValue, newValue) - replaces a specified value with another value in a string
+         ex let str = "Hello, World!";
+            let newStr = str.replace("World", "JavaScript"); // Output: "Hello, JavaScript!"
+        str.repeat(count) - repeats a string a specified number of times
+         ex let str = "Hello! ";
+            let repeatedStr = str.repeat(3); // Output: "Hello! Hello! Hello! "
+
+String Methods with Argumnets - Argument is a some value that we pass to the method.
+        str.indexOf(searchValue) - returns the index of the first occurrence of searchValue in the string, or -1 if not found
+        str.lastIndexOf(searchValue) - returns the index of the last occurrence of searchValue
+        str.replace(searchValue, newValue) - replaces occurrences of searchValue with newValue in the string
+        str.split(separator) - splits a string into an array of substrings based on the specified separator
+
+Method Chaining in JS 
+    Method chaining is a technique where multiple methods are called on the same object in a single line of code. 
+        let name = "   John Doe   ";
+        let formattedName = name.trim().toUpperCase(); // Output: "JOHN DOE"
+
+Array(Data Structure) in JS 
+    An array is a data structure that can hold multiple values at once. 
+        let numbers = [1, 2, 3, 4, 5];
+        let fruits = ["apple", "banana", "cherry"];
+
+    Array Methods 
+        numbers.push(6); // adds 6 to the end of the array
+        numbers.pop(); // removes the last element from the array   
+        numbers.shift(); // removes the first element from the array
+        numbers.unshift(0); // adds 0 to the beginning of the array
+        primary.concat(secondary); // concat : merge 2 arrays
+        splice : remove/replaces/add elements in place 
+        splice(start, deleteCount, item0.....itemN)
+        sort(): sort an array //for string
+        
+Loops 
+    used to iterate a picece of code
+
+    for loop syntax - 
+
+             for(initialisation; condition; update){
+                //do something
+             }
+             ex. for(let i=1; i<=5; i++){
+                  console.log(i);
+                  }
+
+    while loop syntax - 
+
+            while(condition){
+                //do something
+            }
+            ex. let i =;
+                while(i<=5){
+                    console.log(i);
+                    i++;
+                }
+Loops with Arrays 
+            
+            let fruits = ["mango","apple","banana","litchi","orange"];
+            for(let i=0; i<=fruits.length; i++){
+                console.log(i, fruits[i]);
+            }
+        Nested Loop with Nested Arrays 
+
+          
+           let heroes = [ ["ironman","spiderman","thor"],["superman","wonder woman","flash"]]
+           for(let i=0; i<=heroes.lenght; i++){
+            console.log('List #{i}');
+               for(let j=0; j<=heroes[i].lenght; j++){
+                console.log(heroes[i][j]);
+               }
+           }
+Object Literals - Used to store keyed collection & complex entities. 
+                property => (key, value)pai 
+                objects are a collection of propertie
+                ex. const obj = {   //read as a string
+                    name: "John",
+                    age: 30,
+                    city: "New York"
+                }
+    ADD/UPDATE/DELETE VALUE
+                obj.name = "Jane"; // Update the name property
+                obj.country = "USA"; // Add a new property country
+                delete obj.age; // Delete the age property
+    
+    Objects of objects - Storing information of multiple students in an object 
+                const students = {
+                    student1: {
+                        name: "John",
+                        age: 20,
+                        grade: "A"
+                    },
+                    student2: {
+                        name: "Jane",
+                        age: 22,
+                        grade: "B"
+                    }
+                }
+    Array of objects - Storing information of multiple students in an array 
+                const students = [
+                    {
+                        name: "John",
+                        age: 20,
+                        grade: "A"
+                    },
+                    {
+                        name: "Jane",
+                        age: 22,
+                        grade: "B"
+                    }
+                ]
+    Math Object - built-in object that provides properties and methods for mathematical constants and functions. 
+                Math.PI // returns the value of pi
+                Math.E // returns the value of e
+
+                Math.sqrt(x) // returns the square root of x
+                Math.pow(x, y) // returns x raised to the power of y
+                Math.abs(x) // returns the absolute value of x
+                Math.floor(x) // rounds x down to the nearest integer
+                Math.ceil(x) // rounds x up to the nearest integer
+                Math.round(x) // rounds x to the nearest integer
+                Math.random() // returns a random number between 0 (inclusive) and 1 (exclusive)
+
+FUNCTION - A block of code designed to perform a particular task. 
+                function functionName(parameters) {
+                    // code to be executed
+                }
+
+                ex. function greet(name) {
+                    console.log("Hello, " + name + "!");
+                }
+                greet("Alice"); // Output: Hello, Alice!     
+        
+        FUNCTION WITH ARGUMENTS - value we pass to the function when we call it. 
+                function add(a, b) {
+                    return a + b;
+                }
+                let sum = add(5, 3); // Output: 8 
+
+        FUNCTION EXPRESSION - A function expression is a function that is assigned to a variable. 
+                const greet = function(name) {
+                    console.log("Hello, " + name + "!");
+                };
+                greet("Bob"); // Output: Hello, Bob!
+        
+        RETURN - value that a function returns after it has finished executing. 
+                function multiply(a, b) {
+                    return a * b;
+                }
+                let product = multiply(4, 6); // Output: 24
+
+
+        HIGHER ORDER FUNCTION - A function that takes another function as an argument or returns a function as a result. 
+                function higherOrderFunction(callback) {
+                    // code to be executed
+                    callback();
+                }
+                function multipleGreet(func, count) {
+                    for (let i = 0; i < count; i++) {
+                        func();
+                    }
+                }
+                let greet = function() {
+                    console.log("Hello!");
+                };
+                multipleGreet(greet, 3); // Output: Hello! Hello! Hello!
+
+
+
+SCOPE - refers to the accessibility of variables and functions in different parts of the code. 
+                Global Scope - variables declared outside of any function are in the global scope and can be accessed from anywhere in the code.
+                Local Scope - variables declared inside a function are in the local scope and can only be accessed within that function.
+                Block Scope - variables declared with let or const inside a block (e.g., inside an if statement or a loop) are in block scope and can only be accessed within that block.
+                Lexical Scope - functions can access variables from their parent scope, even if the parent scope has finished executing. This is known as lexical scoping.
+
+METHODS - A method is a function that is a property of an object. 
+                const calculator = {
+                    add: function(a, b) {
+                        return a + b;
+                    },
+                    subtract: function(a, b) {
+                        return a - b;
+                    },
+                    multiply: function(a, b) {
+                        return a * b;
+                    },
+                    divide: function(a, b) {
+                        if (b !== 0) {
+                            return a / b;
+                        } else {
+                            return "Cannot divide by zero";
+                        }
+                    }
+                };
+        METHOD(SHORTHAND) - In ES6, you can use method shorthand syntax to define methods in an object literal. 
+                const calculator = {
+                    add(a, b) {
+                        return a + b;
+                    },
+                    subtract(a, b) {
+                        return a - b;
+                    },
+                    multiply(a, b) {
+                        return a * b;
+                    },
+                    divide(a, b) {
+                        if (b !== 0) {
+                            return a / b;
+                        } else {
+                            return "Cannot divide by zero";
+                        }
+                    }
+                };
+  try-catch block - used to handle errors in JavaScript. 
+                try {
+                    // code that may throw an error
+                } catch (error) {
+                    // code to handle the error
+                    console.error("An error occurred: " + error.message);
+                }   
+
+MISCELLANEOUS TOPIC -
+
+            Arrow Function - A concise way to write functions in JavaScript. 
+                const add = (a, b) => {
+                    return a + b;
+                };
+                let sum = add(5, 3); // Output: 8
+            
+            Set Timeout - A function that allows you to execute a piece of code after a specified delay. 
+                consol.log("This will be printed immediately.");
+                setTimeout(() => {
+                    console.log("This will be printed after 2 seconds.");
+                }, 2000);
+
+            Set Interval - A function that allows you to execute a piece of code at regular intervals. 
+                const intervalId = setInterval(() => {
+                    console.log("This message will be displayed every 2 seconds.");
+                }, 2000); // 2000 milliseconds = 2 seconds
+                    // To stop the interval, you can use clearInterval(intervalId);
+
+            This Function - Refers to the current execution context of a function. It allows you to access properties and methods of the object that is currently executing the function. 
+                const person = {
+                    name: "Alice",
+                    greet() {
+                        console.log("Hello, " + this.name + "!");
+                    }
+                };
+                person.greet(); // Output: Hello, Alice! 
+            
+ARRAY METHODS - 
+
+            forEach - A method that executes a provided function once for each array element. 
+                const numbers = [1, 2, 3, 4, 5];
+                numbers.forEach((number) => {
+                    console.log(number);
+                });
+
+            Map - A method that creates a new array populated with the results of calling a provided function on every element in the calling array. 
+               
+                let numbers = [1, 2, 3, 4, 5];
+                let double = number.map(function(el) {
+                    return el * 2;
+                });
+            Filter - A method that creates a new array with all elements that pass the test implemented by the provided function. 
+                let numbers = [1, 2, 3, 4, 5];
+                let evenNumbers = numbers.filter(function(el) {
+                    return el % 2 === 0;
+                });
+            Every - A method that tests whether all elements in the array pass the test implemented by the provided function. 
+                let numbers = [1, 2, 3, 4, 5];
+                let allPositive = numbers.every(function(el) {
+                    return el > 0;
+                });
+            Some - Return true if some elements of array give true for some function. Else return false.
+                arr.some(some function definition or name);
+            Reduce - Reduce the array to a single value 
+                 arr.reduce(reduce function with 2 variables for(accumulator, element)); 
+                 [1,2,3,4].reduce((res, el) => (res+el));
+
+Spread - Expands an iterable into multiple  values 
+         function func(...arr){
+            //do something
+         }
+         
+         Spread with Object Literals - 
+            let data = {
+                email:"john@example.com",
+                password:"123456"
+            };
+            let dataCopy = {...data, id: 123 }; // creates a copy of data and adds an id property
+</p>
+ <script src="practice.js"></script>
+</body>
+</html>

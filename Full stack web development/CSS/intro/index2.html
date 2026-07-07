@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS - Next Step</h1>
+    <h2>Alpha Channel</h2>
+    <p>
+        The alpha channel defines the opacity of a color. It is a number between 0.0 (fully transparent) and 1.0 (fully opaque). <br>
+        Example: <br>
+        rgba(255, 0, 0, 0.5); // red with 50% opacity <br>
+        rgba(0, 255, 0, 0.8); // green with 80% opacity <br>
+        rgba(0, 0, 255, 0.3); // blue with 30% opacity <br>
+    </p>
+    <h2>Opacity</h2>
+    <p>
+        The opacity property sets the opacity level for an element. It is a number between 0.0 (fully transparent) and 1.0 (fully opaque). <br>
+        Example: <br>
+        opacity: 0.5; // 50% opacity <br>
+        opacity: 0.8; // 80% opacity <br>
+        opacity: 0.3; // 30% opacity <br>
+    </p>
+    <h2>CSS Transition</h2>
+    <p>
+        The transition property is used to create smooth animations when changing CSS properties. It allows you to specify the duration, timing function, and delay of the transition. <br>
+        Example: <br>
+        transition: all 0.3s ease-in-out; // applies to all properties, duration 0.3 seconds, ease-in-out timing function <br>
+        transition: background-color 0.5s linear; // applies to background-color, duration 0.5 seconds, linear timing function <br>
+        transition: transform 0.2s ease; // applies to transform, duration 0.2 seconds, ease timing function <br>
+        transition shorthand - property | duration | timing-function | delay
+    </p>
+    <h2>CSS Transform</h2>
+    <p>
+        The transform property is used to apply 2D or 3D transformations to an element. It allows you to rotate, scale, skew, or translate an element. <br>
+        Example: <br>
+        transform: rotate(45deg); // rotates the element 45 degrees <br>
+        transform: scale(1.5); // scales the element to 1.5 times its original size <br>
+        transform: skew(20deg, 10deg); // skews the element by 20 degrees on the X-axis and 10 degrees on the Y-axis <br>
+        transform: translate(50px, 100px); // moves the element 50 pixels to the right and 100 pixels down <br>
+        traslateX(50px); // moves the element 50 pixels to the right <br>
+        translateY(100px); // moves the element 100 pixels down <br>
+    </p>
+    <h2>Box Shadow</h2>
+    <p>
+        The box-shadow property is used to add shadow effects around an element's frame. You can set multiple shadows separated by commas. <br>
+        Example: <br>
+        box-shadow: 10px 10px 5px grey; // horizontal offset, vertical offset, blur radius, shadow color <br>
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); // using rgba for shadow color with opacity <br>
+        box-shadow: inset 5px 5px 10px black; // inset shadow <br>
+    </p>  
+     <h2>Background Image</h2>
+    <p>
+        The background-image property is used to set an image as the background of an element. You can use various functions to control the display of the background image. <br>
+        Example: <br>
+        background-image: url('image.jpg'); // sets the background image <br>
+        background-size: contain/cover/auto; // controls the size of the background image <br>
+        background-repeat: no-repeat; // prevents the background image from repeating <br>
+        background-position: center; // centers the background image <br>
+    </p>
+    <h2>Position</h2>
+    <p>
+        The position property is used to specify the positioning method for an element. It can take the following values: static, relative, absolute, fixed, and sticky. <br>
+        Example: <br>
+        position: static; // default position <br>
+        position: relative; // positioned relative to its normal position <br>
+        position: absolute; // positioned relative to the nearest positioned ancestor <br>
+        position: fixed; // positioned relative to the viewport <br>
+        position: sticky; // toggles between relative and fixed, depending on the scroll position <br>
+    </p>
+    <h2>Flexbox</h2>
+    <p>
+        Flexbox is a layout model that allows you to design complex layouts easily and efficiently. It provides a more flexible way to arrange items within a container. <br>
+        Example: <br>
+        display: flex; // defines a flex container <br>
+        flex-direction: row/column; // defines the direction of the flex items <br>
+        justify-content: center/space-between/space-around; // aligns flex items along the main axis <br>
+        align-items: center/stretch/flex-start/flex-end/baseline; // aligns flex items along the cross axis <br>
+        flex-wrap: nowrap/wrap/reverse; // controls whether flex items wrap onto multiple lines <br>
+        align-content:flex-start/flex-end/center/space-between/space-around/evenly/baseline:  //it sets the distribution of space between and around content items along a flexbox's cross-axis   <br>
+        align-self:flex-start/flex-end/center/baseline;  //Aligns an items along the cross axis (for individual) <br>
+    </p>
+    <h2>Flex Sizing</h2>
+    <p>
+        flex-basis:100px //It sets the initial main size of a flex item. <br>
+        flex-grow:1  //It specifies how much of the flex continer's remaining space should be assigned to the flex item's main size.  <br>
+        flex-shrink:1  //It sets the flex shrink factor of a flex item.  <br>
+        
+        flex Shorthand -  flex:2 2 100px; // flex-grow|flex-shrink|flex-basis <br>
+                          flex:2 100px;  // flex-grow|flex-basis <br>
+                          flex:2; //flex-grow(unitiess) <br> 
+                          flex: 100px; //flex-basis <br>
+    </p>   
+    <h2>CSS Grid</h2>
+<p>
+     CSS Grid is a powerful layout system that allows you to create complex grid-based layouts easily. It provides a two-dimensional grid system for arranging items in rows and columns. <br>
+     Example: <br>
+      display: grid; // defines a grid container <br>
+       grid-template-columns: 100px 200px; // defines the columns of the grid <br>
+       grid-template-rows: 50px 100px; // defines the rows of the grid <br> 
+        grid-gap: 10px; // sets the gap between grid items <br>
+         grid-column: 1 / 3; // spans an item across columns 1 to 3 <br>
+          grid-row: 1 / 2; // spans an item across rows 1 to 2 <br> 
+    <h3>Grid-Columns</h3>
+        <p>
+        grid-template-columns: repeat(3, 1fr); // creates 3 equal columns <br>
+        grid-template-columns: 100px auto 200px; // creates columns with specified widths <br> 
+        grid-template-columns: minmax(100px, 1fr); // creates a column that is at least 100px wide and can grow to fill available space <br>
+        grid-column-start: 1; // starts an item at column 1 <br> 
+        grid-column-end: 3; // ends an item at column 3 <br>
+        grid-column: 1 / 3; // shorthand for grid-column-start and grid-column-end <br>
+        </p>
+    <h3>Grid-Rows</h3>
+        <p>
+        grid-template-rows: repeat(2, 1fr); // creates 2 equal rows <br>
+        grid-template-rows: 50px auto; // creates rows with specified heights <br>
+        grid-template-rows: minmax(50px, 1fr); // creates a row that is at least 50px high and can grow to fill available space <br>
+        grid-row-start: 1; // starts an item at row 1 <br>  
+        grid-row-end: 2; // ends an item at row 2 <br>
+        grid-row: 1 / 2; // shorthand for grid-row-start and grid-row
+        </p>
+    <h3>Grid-Areas</h3>
+        <p>
+        grid-template-areas: 
+            "header header header"
+            "sidebar content content"
+            "footer footer footer"; // defines named grid areas <br>
+        grid-area: header; // assigns an item to a named grid area <br>
+            grid-area: sidebar; // assigns an item to a named grid area <br>
+            grid-area: content; // assigns an item to a named grid area <br>
+            grid-area: footer; // assigns an item to a named grid area <br>
+        </p>
+</p>
+
+<h2> Common Properties</h2>
+    <p>
+        <h3>Horizontal</h3>
+        justify-items // aligns items horizontally in a grid container <br>
+        justify-content // aligns the entire grid horizontally within the container <br>
+        justify-self // aligns an individual item horizontally within its grid area <br>
+        <h3>Vertical</h3>
+        align-items // aligns items vertically in a grid container <br>
+        align-content // aligns the entire grid vertically within the container <br>
+        align-self // aligns an individual item vertically within its grid area <br>
+        <h3>Horizontal + Vartical</h3>
+        place-items // shorthand for justify-items and align-items <br> 
+        place-content // shorthand for justify-content and align-content <br> 
+        place-self // shorthand for justify-self and align-self <br>
+    </p>        
+</body>    
+</html>

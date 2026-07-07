@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comptible" content="IE=<i class="edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LEVELS</title>
+
+</head>
+<body>
+   <h1>LEVEL 1 BASICS OF CSS:</h1>
+   <!--style - it is a laguage that is used to describe the style of a document.-->
+    <h2 style="color: rgb(16, 26, 25);">color blue</h2> <!--Inline -->
+        <!--style tag= head tag ke ander style tag lagane pr har h1 ka color change kr degaa -->
+        
+        <!--external including style= <link rel="stylsheet" href="style.css(file ka name/path)" head tag ander likhna hai.ise ek file ko dusre file se link krne ke liye-->
+
+        Color Property-Used to set the color of foreground(samne ki trf)
+       <br> color: red;
+        <br>color: blue;
+
+        <p>This is paragraph.......</p>
+
+        <button>click me!</button> <!--for show button-->
+
+        <br>Background color Property-Used to set the color of Background
+        <br> Background-color: red;
+
+        <br> 1.Color Systems
+        <br> color:rgb(255,0,0);
+        <br> color:rgb(0,255,0);
+        <br> red=0 to 255
+        <br>green= 0 to 255
+        <br>blue= 0 to 255
+
+        <br>2.Hex(Hexadecimal)
+        <br>color:#ff0000;
+        color:#00f00;
+        <hr>
+
+        SELECTOR    
+        <br> 1. Universal Selector- *{} ek baar sab select ho jayega.
+        <br>2. Element Selector- h1{}
+        <br> 3. id Selector- #muid{} ek se jayda ko same id nhi de skte
+        <br> 4. class Selector- .myClass multiple element ko same class mai rakh skte hai
+        
+        <br>CSS mai jo baad mai aata hai uski priority jayda hoti hai.
+        <hr>
+    
+        <br> TEXT PROPERTIES
+        <br>text-align: left/right/center
+        <br> text-align: start- right
+        <br> text-align: end- left
+
+        <br>text-decoration: underline/overline/line-through 
+        <hr>
+        Font-weight
+
+    font-weight: normal/bold/bolder/lighter      
+      font-weight-100-900
+      <hr>
+      font-family
+     font-family:arial
+    font-family:arial,roboto
+     <hr>
+     Unit in CSS
+      <br>1. pixel(px)=96=1inch=  
+    <br> line-height( koi line individual line kitni le rhi hai)
+       <br> line-height:2px
+      <br> line-height:normal
+    <hr>
+    Text-Properties
+    <br>text-transform:uppercase/lowercase/capitalize/none
+    <hr color="red">
+
+    <h1>LEVEL 2:</h1>
+
+    <br>Box Model in CSS 
+     <li>Height</li> <p>By default, it content area height of the element
+        div{
+            height:50px;
+        }
+     </p>
+     <li>Width</li>
+     <li>Border</li>
+     <li>Padding</li>
+     <li>Margin</li>
+
+     boader - solid/ dotted/dashed
+      ex.boarder: 2px solid blace(width+style+color)
+      
+      boader-radius(coners ko round krne ke liye)
+      ex. boader-radius : px or %
+     
+      Padding(charo trf ka area)
+      1.padding-left
+      2.padding-right
+      3.padding-top
+      4.padding-bottom
+      top|right|bottom|left->clockwiswe(charo trf ke liye)
+
+      Margin(2 box ke bich ka area)
+      1.margin-top 
+      2.margin-bottom 
+      top|right|bottom|left->clockwiswe(charo trf ke liye)
+      
+      <h1>Navbar</h1>
+
+      <div id="navbar">
+        <a href="logo">Amazon.in</a>
+        <a>Acount</a>
+        <a>My Card</a>
+        <a>Contect us</a>
+            <input placeholder="Search Amazon.in">
+            <button>Search</button>
+         </div>
+      
+      <h1>Text PROPERTIES</h1>
+      <p>
+        text-align : left/start 
+        text-align : right/end 
+        text-align : center  
+        text-align : justify
+    </p>
+    <h2>font-weight</h2>
+    <p>
+        font-weight : normal //400
+        font-weoght: bold //700,900
+        font-weight:100 
+        font-weight:bolder 
+        font-weight:lighter
+    </p>
+    <h2>text-decoration</h2>
+    <p>
+        text-decoration : underline
+        text-decoration : overline
+        text-decoration : line-through
+        text-decoration : none
+    </p>
+    <h2>line height</h2>
+    <p>
+        line-height : normal
+        line-height : 1.5
+        line-height : 2px
+    </p>
+    <h2>letter-spacing</h2>
+    <p>
+        letter-spacing : normal
+        letter-spacing : 2px
+        letter-spacing : 0.5px
+    </p>
+    <h2>Font-size units in css</h2>
+    <p>
+        absolute units:
+        1.px-pixel
+        2.in-inch
+        3.cm-centimeter 
+        4.mm-millimeter
+        5.pt-point
+        6.pc-pica
+
+        relative units:
+        1.em    
+        2.rem
+        3.%
+        4.vw-viewport width
+        5.vh-viewport height
+        6.vw + many more
+    </p>
+     <h2>font-family</h2>
+     <p>
+        font-family: arial;
+        font-family: avant garde, didot,sans-serif;
+     </p>
+     
+    </body>
+</html>

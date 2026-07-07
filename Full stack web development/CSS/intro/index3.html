@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Animations</h1>
+    <p>
+        <ul>
+            <li>Animation-name</li>
+            <p>
+                The animation-name property specifies the name of the @keyframes animation to apply to an element. It is used in conjunction with other animation properties to create animations. <br>
+                Example: <br>
+                animation-name: example; // applies the 'example' animation defined in @keyframes <br>
+                animation: example 5s infinite; // shorthand for applying the 'example' animation with a duration of 5 seconds and infinite iterations <br>
+            </p>
+            <li>Animation-duration</li>
+                <p>
+                    The animation-duration property specifies the length of time an animation takes to complete one cycle. It is defined in seconds (s) or milliseconds (ms). <br>
+                    Example: <br>
+                    animation-duration: 2s; // sets the duration of the animation to 2 seconds <br>
+                    animation-duration: 500ms; // sets the duration of the animation to 500 milliseconds <br>
+            <li>Animation-timing-function</li>
+                <p>
+                    The animation-timing-function property specifies the speed curve of an animation. It defines how the intermediate values of the animation are calculated over time. <br>
+                    Example: <br>
+                    animation-timing-function: linear; // animation progresses at a constant speed <br>
+                    animation-timing-function: ease; // animation starts slow, speeds up, and then slows down at the end <br>
+                    animation-timing-function: ease-in; // animation starts slow and speeds up towards the end <br>
+                    animation-timing-function: ease-out; // animation starts fast and slows down towards the end <br>
+                    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); // custom timing function using cubic-bezier curve <br>
+                    </p>
+            <li>Animation-delay</li>
+                <p>
+                    The animation-delay property specifies the amount of time to wait before starting an animation. It is defined in seconds (s) or milliseconds (ms). <br>
+                    Example: <br>
+                    animation-delay: 1s; // delays the start of the animation by 1 second <br>
+                    animation-delay: 500ms; // delays the start of the animation by 500 milliseconds <br>
+                </p>
+            <li>Animation-iteration-count</li>
+                <p>
+                    The animation-iteration-count property specifies the number of times an animation should be played. It can be a specific number or 'infinite' for continuous looping. <br>
+                    Example: <br>
+                    animation-iteration-count: 3; // plays the animation 3 times <br>
+                    animation-iteration-count: infinite; // plays the animation indefinitely <br>
+                </p>
+            <li>Animation-direction</li>
+                <p>
+                    The animation-direction property specifies whether an animation should play in reverse on alternate cycles. It can be set to 'normal', 'reverse', 'alternate', or 'alternate-reverse'. <br>
+                    Example: <br>
+                    animation-direction: normal; // plays the animation in the normal direction (default) <br>
+                    animation-direction: reverse; // plays the animation in reverse direction <br>
+                    animation-direction: alternate; // alternates between normal and reverse direction on each cycle <br>
+                    animation-direction: alternate-reverse; // alternates between reverse and normal direction on each cycle <br>
+                </p>
+            
+        </ul>
+    </p>
+    <h2>Keyframes</h2>
+    <p>
+        Keyframes are used to define the intermediate steps in a CSS animation. They allow you to specify the styles at various points during the animation sequence. <br>
+        Example: <br>
+        @keyframes example { <br>
+            0% { background-color: red; } <br>
+            50% { background-color: yellow; } <br>
+            100% { background-color: green; } <br>
+        } <br>
+        @keyframes example { <br>
+            from { 
+                transform: rotate(0deg);
+             } <br>
+            to { 
+                transform: rotate(360deg);
+            } <br>
+        } <br>
+        animation: example 5s infinite; // applies the animation to an element, duration 5 seconds, infinite loop <br>
+        animation: example 2s ease-in-out 1s 3 reverse; // applies the animation with specific timing, delay, iteration count, and direction <br>
+     <h3>Shorthand</h3>
+        <p>
+            The animation property is a shorthand for setting all the animation properties at once. It can include the animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, and animation-direction. <br>
+            Example: <br>
+            animation: example 5s ease-in-out 1s 3 reverse; // applies the 'example' animation with a duration of 5 seconds, ease-in-out timing function, 1 second delay, 3 iterations, and reverse direction <br>
+            animation: example 2s linear infinite; // applies the 'example' animation with a duration of 2 seconds, linear timing function, and infinite iterations <br>
+        </p>
+    <h2>Media Queries</h2>
+    <p>
+        Media queries are used to apply different styles to different devices or screen sizes. They allow you to create responsive designs that adapt to various screen widths, orientations, and resolutions. <br>
+        Example: <br>
+        @media (max-width: 600px) { <br>
+            body { background-color: lightblue; } <br>
+        } <br>
+        @media (min-width: 601px) and (max-width: 1200px) { <br>
+            body { background-color: lightgreen; } <br>
+        } <br>
+        @media (min-width: 1201px) { <br>
+            body { background-color: lightcoral; } <br>
+        } <br>
+        </p>
+    <h2>Z-index</h2>
+    <p>
+        The z-index property specifies the stack order of elements. It determines which elements are displayed in front of or behind other elements. Elements with a higher z-index value will be displayed in front of those with a lower value. <br>
+        Example: <br>
+        .element1 { z-index: 1; } // element1 will be behind element2 <br>
+        .element2 { z-index: 2; } // element2 will be in front of element1 <br>
+        .element3 { z-index: 0; } // element3 will be behind both element1 and element2 <br>
+        z-index:auto(0) // default value, elements will be stacked in the order they appear in the HTML <br>
+        z-index:1/2/... // positive values will stack in front of elements with lower z-index values <br>
+        z-index:-1/-2/... // negative values will stack behind elements with higher z-index
+
+      </p>
+</body>
+</html>
